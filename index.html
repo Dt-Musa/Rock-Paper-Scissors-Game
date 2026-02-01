@@ -3,17 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock-Paper-Scissors Game</title>
+    <title>Rock-Paper-Scissor-Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Rock-Paper-Scissors</h1>
-    <div class="buttons">
-      <button class="btn" data-choice="rock">Rock</button>
-      <button class="btn" data-choice="paper">Paper</button>
-      <button class="btn" data-choice="scissors">Scissors</button>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        
+        <div class="score-board">
+            <div class="score">
+                <p>Player: <span id="player-score">0</span></p>
+            </div>
+            <div class="score">
+                <p>Computer: <span id="computer-score">0</span></p>
+            </div>
+        </div>
+
+        <div class="choices">
+            <button id="rock" class="choice-btn">🪨 Rock</button>
+            <button id="paper" class="choice-btn">📄 Paper</button>
+            <button id="scissors" class="choice-btn">✂️ Scissors</button>
+        </div>
+
+        <div class="result">
+            <p id="result-text">Make your choice!</p>
+        </div>
+
+        <div class="choices-display">
+            <div class="choice-display">
+                <p>Your Choice:</p>
+                <p id="player-choice" class="choice-emoji">❓</p>
+            </div>
+            <div class="choice-display">
+                <p>Computer's Choice:</p>
+                <p id="computer-choice" class="choice-emoji">❓</p>
+            </div>
+        </div>
+
+        <button id="reset-btn" class="reset-btn">Reset Game</button>
     </div>
-    <div id="result"></div>
-    <script src="index.js"></script>
+    <script src="/index.js"></script>
 </body>
 </html>
